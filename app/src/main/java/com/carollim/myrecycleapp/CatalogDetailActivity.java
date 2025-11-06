@@ -1,5 +1,7 @@
 package com.carollim.myrecycleapp;
 
+import com.carollim.myrecycleapp.Logger;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -23,7 +25,7 @@ public class CatalogDetailActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalog_detail);
-        Log.d(TAG, "onCreate: called.");
+        Log.d(Logger.CATALOG_DETAIL, "onCreate: called.");
 
         imageViewDetailCategory = findViewById(R.id.imageViewDetailCategory);
         txtCatalogDetailCategoryName = findViewById(R.id.txtCatalogDetailCategoryName);
