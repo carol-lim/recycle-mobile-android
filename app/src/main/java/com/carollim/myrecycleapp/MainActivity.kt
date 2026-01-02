@@ -1,33 +1,31 @@
 package com.carollim.myrecycleapp
 
+import android.os.Bundle
+import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.ui.Modifier
+import com.carollim.myrecycleapp.ui.theme.MYRecycleAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
-internal class {
-    @AndroidEntryPoint
-    internal inner class MainActivity
-
-    fun ComponentActivity() {
-        val `fun`: override?
-        onCreate(savedInstanceState)
-        if (Bundle)
-            run {
-                super.onCreate(savedInstanceState)
-                setContent
-                run {
-                    // The app theme will be configured in a subsequent step.
-                    MaterialTheme
-                    run {
-                        Surface(
-                            fillMaxSize().also { modifier = it },
-                            colorScheme.background.also { color = it }
-                        )
-                        run {
-                            // The main navigation graph will be placed here.
-                            // For now, this is a placeholder.
-                            Text("Welcome to the new MYRecycleApp!")
-                        }
-                    }
+@AndroidEntryPoint
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MYRecycleAppTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    // The main navigation graph will be placed here.
+                    // For now, this is a placeholder.
+                    Text("Welcome to the new MYRecycleApp!")
                 }
             }
+        }
     }
 }
