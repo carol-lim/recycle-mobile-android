@@ -20,11 +20,11 @@
         android:theme="@style/Theme.MYRecycleApp"
         android:usesCleartextTraffic="true">
         <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false"/>
-        <activity
-            android:name=".PayActivity"
-            android:exported="true"
-            android:label="Payment"
-            android:parentActivityName=".CollectionActivity"/>
+<!--        <activity-->
+<!--            android:name=".PayActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="Payment"-->
+<!--            android:parentActivityName=".CollectionActivity"/>-->
         <activity
             android:name=".ReserveFormActivity"
             android:exported="true"

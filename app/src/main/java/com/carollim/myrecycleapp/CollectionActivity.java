@@ -264,14 +264,14 @@ public class CollectionActivity extends AppCompatActivity /*implements PaymentRe
 
                     //Toast.makeText(CollectionActivity.this, "Submitted successfully.", Toast.LENGTH_SHORT).show();
                     //Checkout.preload(getApplicationContext());
-                    Intent intent = new Intent(CollectionActivity.this, PayActivity.class);
-                    intent.putExtra("price", history.price);
-                    intent.putExtra("category", history.category);
-                    intent.putExtra("weight", history.weight);
-                    intent.putExtra("user", history.user);
-
-                    //Intent intent = new Intent(CollectionActivity.this, MainActivity.class);
-                    startActivity(intent);
+//                    Intent intent = new Intent(CollectionActivity.this, PayActivity.class);
+//                    intent.putExtra("price", history.price);
+//                    intent.putExtra("category", history.category);
+//                    intent.putExtra("weight", history.weight);
+//                    intent.putExtra("user", history.user);
+//
+//                    //Intent intent = new Intent(CollectionActivity.this, MainActivity.class);
+//                    startActivity(intent);
                     finish();
 
                 } else {
