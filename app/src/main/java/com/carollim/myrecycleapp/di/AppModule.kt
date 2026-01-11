@@ -2,8 +2,10 @@ package com.carollim.myrecycleapp.di
 
 import com.carollim.myrecycleapp.data.repository.AuthRepositoryImpl
 import com.carollim.myrecycleapp.data.repository.CatalogRepositoryImpl
+import com.carollim.myrecycleapp.data.repository.UserRepositoryImpl
 import com.carollim.myrecycleapp.domain.repository.AuthRepository
 import com.carollim.myrecycleapp.domain.repository.CatalogRepository
+import com.carollim.myrecycleapp.domain.repository.UserRepository
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.Module
@@ -37,6 +39,12 @@ object AppModule {
     @Provides
     @Singleton
     fun provideCatalogRepository(impl: CatalogRepositoryImpl): CatalogRepository {
+        return impl
+    }
+
+    @Provides
+    @Singleton
+    fun provideUserRepository(impl: UserRepositoryImpl): UserRepository {
         return impl
     }
 }
