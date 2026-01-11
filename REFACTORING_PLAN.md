@@ -108,10 +108,73 @@ We will build the platform to support three distinct user roles:
     }
   },
   "catalog": {
-    "pet_plastic": {
-      "name": "Plastic Bottles",
-      "desc": "PET, or PolyEthylene Terephthalate...",
-      "pricePerKg": 0.6,
+    "aluminium_cans": {
+      "name": "Aluminium Cans",
+      "desc": "Drink cans and lightweight aluminium containers. Highly recyclable and valuable.",
+      "pricePerKg": 4.00,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "tin_steel_cans": {
+      "name": "Tin & Steel Cans",
+      "desc": "Food tins, condensed milk cans, and steel containers. Please rinse before recycling.",
+      "pricePerKg": 0.60,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "pet_bottles": {
+      "name": "Plastic Bottles (PET)",
+      "desc": "Clear plastic mineral water and carbonated drink bottles. Look for the #1 recycle symbol.",
+      "pricePerKg": 1.00,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "detergent_bottles": {
+      "name": "Detergent Bottles (HDPE)",
+      "desc": "Opaque plastic bottles used for shampoo, detergent, and milk. Look for the #2 recycle symbol.",
+      "pricePerKg": 0.60,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "cardboard": {
+      "name": "Cardboard & Boxes",
+      "desc": "Corrugated cardboard boxes and brown paper packaging. Please flatten before pickup.",
+      "pricePerKg": 0.50,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "white_paper": {
+      "name": "White Office Paper",
+      "desc": "A4 paper, office documents, and white letters. High value compared to mixed paper.",
+      "pricePerKg": 0.55,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "newspaper": {
+      "name": "Newspaper & Magazines",
+      "desc": "Old newspapers, magazines, and glossy brochures.",
+      "pricePerKg": 0.35,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "mixed_paper": {
+      "name": "Mixed Paper",
+      "desc": "Cereal boxes, egg cartons, and miscellaneous paper packaging.",
+      "pricePerKg": 0.20,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "e_waste": {
+      "name": "Small E-Waste",
+      "desc": "Small electronics like mobile phones, chargers, and keyboards.",
+      "pricePerKg": 2.50,
+      "imageUrl": "...",
+      "isActive": true
+    },
+    "glass_bottles": {
+      "name": "Glass Bottles & Jars",
+      "desc": "Clear or colored glass bottles and food jars. Please handle with care.",
+      "pricePerKg": 0.10,
       "imageUrl": "...",
       "isActive": true
     }
